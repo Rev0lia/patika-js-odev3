@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --neutral-100: #ffffff;
+    --neutral-200: #ebebeb;
+    --neutral-900: #363537;
+    --main: #fb6107;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--neutral-200);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: normal;
+    color: var(--main);
+}
+
+.title {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 480px;
+    min-width: 260px;
+    width: 100%;
+}
+
+.title>p {
+    font-family: "Great Vibes", cursive;
+    font-size: 60px;
+    color: var(--main);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.buttons>button {
+    width: 60px;
+    height: 40px;
+    background-color: var(--neutral-100);
+    color: var(--main);
+    border-radius: 5px;
+    border: 2px solid var(--neutral-900);
+    transition: all 0.3s;
+}
+
+.buttons>button:hover {
+    background-color: var(--main);
+    color: var(--neutral-100);
+}
+
+.meals {
+    margin-top: 50px;
+    max-width: 1320px;
+    min-width: 260px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.meal {
+    width: 660px;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    margin: 20px 0px;
+}
+
+.meal>img {
+    width: 30%;
+    object-fit: cover;
+    height: 175px;
+    border-radius: 10px;
+    border: 5px solid var(--neutral-900);
+}
+
+.details {
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.up::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--neutral-900);
+    top: 35px;
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1340px) {
+    .meal {
+        width: 540px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .meal {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .meal {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h4 {
+        font-size: 16px;
+    }
+}
